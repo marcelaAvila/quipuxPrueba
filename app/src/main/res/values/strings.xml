@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">QuipuxPrueba</string>
+    <string name="username">Username</string>
+    <string name="password">Password</string>
+    <string name="msgProgressDialog">Consultando, Por Favor Espere.</string>
+    <string name="sinDataMsg">Esto es una prueba de Android y necesitamos personas para mostrar, por favor agregue personas.</string>
+</resources>
