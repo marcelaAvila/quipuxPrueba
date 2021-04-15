@@ -33,7 +33,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:hint="Ingrese su numero de identificacion"
-        android:textColorHint="@color/blue"/>
+        android:textColorHint="@color/colorText"/>
 
     <TextView
         android:layout_width="wrap_content"
@@ -48,7 +48,7 @@
         android:layout_height="wrap_content"
         android:maxLength="50"
         android:hint="Ingrese sus nombres"
-        android:textColorHint="@color/blue"/>
+        android:textColorHint="@color/colorText"/>
 
     <TextView
         android:layout_width="wrap_content"
@@ -63,7 +63,7 @@
         android:layout_height="wrap_content"
         android:maxLength="60"
         android:hint="Ingrese sus Apellidos"
-        android:textColorHint="@color/blue"/>
+        android:textColorHint="@color/colorText"/>
 
     <TextView
         android:layout_width="wrap_content"
@@ -79,7 +79,7 @@
         android:maxLength="3"
         android:inputType="number"
         android:hint="Ingrese su edad"
-        android:textColorHint="@color/blue"/>
+        android:textColorHint="@color/colorText"/>
 
     <TextView
         android:layout_width="wrap_content"

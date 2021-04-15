@@ -1,5 +1,6 @@
 plugins {
     id 'com.android.application'
+    id 'com.onesignal.androidsdk.onesignal-gradle-plugin'
 }
 
 android {
@@ -11,7 +12,7 @@ android {
         targetSdkVersion 29
         versionCode 1
         versionName "1.0"
-
+        multiDexEnabled true
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
     }
 
@@ -19,6 +20,26 @@ android {
         release {
             minifyEnabled false
             proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+
+    flavorDimensions "default"
+    productFlavors {
+        appQuipux {
+            applicationId "com.example.quipux"
+
+            manifestPlaceholders = [
+                    onesignal_app_id : 'b319f828-3756-4727-8014-91512a5e07ff',
+                    onesignal_google_project_number : '441980765819'
+            ]
+        }
+        appQuipuxPrueba {
+            applicationId "com.example.quipuxprueba"
+
+            manifestPlaceholders = [
+                    onesignal_app_id : '5b88071a-1802-4a46-842b-9401be5416c2',
+                    onesignal_google_project_number : '687003030131'
+            ]
         }
     }
     compileOptions {
@@ -36,7 +57,15 @@ dependencies {
     androidTestImplementation 'androidx.test.ext:junit:1.1.2'
     androidTestImplementation 'androidx.test.espresso:espresso-core:3.3.0'
     implementation 'com.google.code.gson:gson:2.8.1'
+    implementation 'com.onesignal:OneSignal:[4.0.0, 4.99.99]'
+    implementation 'androidx.multidex:multidex:2.0.1'
+
+    implementation platform('com.google.firebase:firebase-bom:26.7.0')
+    implementation 'com.google.firebase:firebase-analytics'
+    implementation 'com.google.firebase:firebase-crashlytics'
 
 }
 
-apply plugin:'realm-android'
+apply plugin: 'realm-android'
+apply plugin: 'com.google.gms.google-services'
+apply plugin: 'com.google.firebase.crashlytics'

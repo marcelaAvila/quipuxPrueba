@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "441980765819",
+    "project_id": "my-project-quipux",
+    "storage_bucket": "my-project-quipux.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:441980765819:android:eb4361701afd1e7fb204de",
+        "android_client_info": {
+          "package_name": "com.example.quipux"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "441980765819-005k1ahh2dvsvel3ugnd0hbb53j483vc.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAFLBk-fULuNdyjZoG3zb1amh6uaJSVrE0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "441980765819-005k1ahh2dvsvel3ugnd0hbb53j483vc.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
